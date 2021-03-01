@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.ruang301.bankquiz.QuizActivity">
+
+    <LinearLayout
+        android:id="@+id/qLL1"
+        android:layout_width="match_parent"
+        android:layout_height="287dp"
+        android:background="#00e83e"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/qLL3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score : 3"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/qLL4"
+            android:layout_width="344dp"
+            android:layout_height="185dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="306dp"
+                android:layout_height="192dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="berapa jumlah pulau yang ada di indonesia"
+                android:textAlignment="center"
+                android:textColor="#fbff00"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/qLL2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/qLL1"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:background="#0ddbbc"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/choice1"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            android:elevation="2dp"
+            android:onClick="onClick"
+            android:text="5"
+            android:textColor="#fbff00" />
+
+        <Button
+            android:id="@+id/choice2"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black"
+            android:elevation="2dp"
+            android:onClick="onClick"
+            android:text="8"
+            android:textColor="#fbff00" />
+
+        <Button
+            android:id="@+id/choice3"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black"
+            android:elevation="2dp"
+            android:onClick="onClick"
+            android:text="4"
+            android:textColor="#fbff00" />
+
+        <Button
+            android:id="@+id/choice4"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@color/black"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="10"
+            android:textColor="#fbff00" />
+    </LinearLayout>
+
+</RelativeLayout>
